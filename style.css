@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@100;200;400;600;900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+   background-color:  hsl(0, 0%, 95%);
+
+}
+.container{
+display: flex;
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+ 
+    width: 1000px;
+    height: 500px;
+   
+}
+.cardone{ border-radius: 10px 0 0 10px;
+background-color:  hsl(31, 77%, 52%);
+   
+}
+.cardtwo{
+    background-color:hsl(184, 100%, 22%) ;
+}
+.cardthree{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0;
+}
+.cardthree,.cardtwo,.cardone{
+color: hsla(0, 0%, 100%, 0.75);
+    padding: 50px;
+}
+ p{ font-size: 15px;
+line-height:30px;
+    
+    font-weight: 700;
+    width: 90%;
+
+    
+   
+    
+ }
+ h1{margin: 20px 0px  20px 0;
+     text-transform: uppercase;
+     
+ font-weight: 700;
+ }
+ button{
+     margin-top: 80px;
+     width: 150px;
+     height: 50px;
+     border-radius: 50px;
+     border: 0ch;
+    
+
+ }
+ button:hover{
+    background-color: Transparent;
+
+  
+    cursor:pointer;
+  
+    border: 1px white solid;
+
+
+}
+button span:hover{
+  
+    color: white;
+}
+ .cardone button {
+
+    color:hsl(31, 77%, 52%) ;
+    font-weight: 400;
+    
+ }
+.cardtwo button{
+    color: hsl(184, 100%, 22%);
+    font-weight: 400;
+}
+.cardthree button{
+    font-weight: 400;
+    color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width: 375px)  {
+    .container{
+        display: flex;
+        flex-direction: column;
+            width: 350px;
+           
+        }
+        .cardone{ border-radius: 10px 10px 0 0;
+            background-color:  hsl(31, 77%, 52%);
+               
+            }
+            .cardthree{
+                background-color: hsl(179, 100%, 13%);
+                border-radius: 0px 0px 10px 10px;
+            }
+}
